@@ -16,6 +16,17 @@ func main() {
 	totalLength, upperName := lenAndUpper("hyeongseok")
 
 	fmt.Println(totalLength, upperName)
+
+	total := superAdd(1, 2, 3, 4, 5)
+	fmt.Println(total)
+}
+
+func superAdd(numbers ...int) int {
+	total := 0
+	for _, number := range numbers {
+		total += number
+	}
+	return total
 }
 
 // func lenAndUpper(name string) (int, string) {
